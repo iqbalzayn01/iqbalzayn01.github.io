@@ -1,6 +1,8 @@
+import { Links } from "./Links";
+
 export const Header = () => {
   return (
-    <header className="fixed bg-dark w-full">
+    <header className="fixed bg-secondary w-full">
       <nav className="2xl:container relative mx-auto flex items-center justify-between px-5 py-10 md:px-20">
         <div className="flex items-center gap-5 z-50">
           {/* Logo */}
@@ -8,36 +10,12 @@ export const Header = () => {
             href="./index.html"
             className="text-xl text-white tracking-widest uppercase mr-5"
           >
-            Iqbal<span className="text-primary font-bold">zayn.</span>
+            Iqbal<span className="text-primary font-bold">zayyn.</span>
           </a>
         </div>
 
         {/* Links */}
-        <ul className="hidden md:flex items-center justify-end gap-5 xl:gap-20">
-          <li>
-            <a
-              href="#about"
-              data-i18n="links.aboutme"
-              className="text-xl text-white"
-            >
-              About Me
-            </a>
-          </li>
-          <li>
-            <a href="#portfolio" className="text-xl text-white">
-              Portfolio
-            </a>
-          </li>
-          <li>
-            <a
-              href="#contacts"
-              data-i18n="links.contacts"
-              className="text-xl text-white"
-            >
-              Contact
-            </a>
-          </li>
-        </ul>
+        <Links />
 
         {/* Mobile: Menu */}
         <button type="button" className="md:hidden z-50">
