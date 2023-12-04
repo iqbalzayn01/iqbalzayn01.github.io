@@ -1,4 +1,4 @@
-export const About = () => {
+export const Portfolio = () => {
   return (
     <section className="mb-10 lg:mb-48">
       <div className="2xl:container mx-auto px-5 py-10 md:px-20">

@@ -2,7 +2,7 @@ import { Links } from "./Links";
 
 export const Header = () => {
   return (
-    <header className="fixed bg-secondary w-full">
+    <header className="bg-secondary w-full">
       <nav className="2xl:container relative mx-auto flex items-center justify-between px-5 py-10 md:px-20">
         <div className="flex items-center gap-5 z-50">
           {/* Logo */}
