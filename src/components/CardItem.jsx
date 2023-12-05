@@ -9,7 +9,7 @@ export const CardItem = ({ id, name, imageName, url }) => {
       className="card-item"
       rel="noreferrer"
     >
-      <figure className="relative h-full overflow-hidden transition-all duration-500 ease-in-out">
+      <figure className="relative h-full overflow-hidden transition-all duration-500 ease-in-out rounded-md">
         <img
           src={`./content/portfolio/${imageName}`}
           alt={name}

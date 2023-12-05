@@ -11,7 +11,7 @@ export const Hero = () => {
           </h1>
         </hgroup>
         <a href="#contacts">
-          <button className="text-white hover:text-secondary font-semibold px-8 py-6 hover:bg-white border-2 border-white rounded-full tracking-wider">
+          <button className="text-white hover:text-secondary font-semibold px-6 py-4 hover:bg-white border-2 border-white rounded-full tracking-wider">
             Let’s Connect!
           </button>
         </a>
