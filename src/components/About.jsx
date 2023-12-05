@@ -13,8 +13,8 @@ export const About = () => {
           <div className="w-full md:w-1/2">
             <h2 className=" text-2xl text-white font-medium mb-10">About</h2>
             <p className="text-white mb-5">
-              I am a freelancer in Frontend Development and Web Designer. I have
-              a strong base in information technology. My skills include UI/UX
+              I am a freelancer in Frontend Development and Web Design. I have a
+              strong base in information technology. My skills include UI/UX
               Design, Figma, Responsive Design, HTML, CSS, Tailwind, Javascript,
               ExpressJS, NodeJS, ReactJS, and Basic Back-End.
             </p>
