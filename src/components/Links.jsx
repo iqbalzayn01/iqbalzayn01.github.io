@@ -10,7 +10,7 @@ export const Links = () => {
         <li key={linkItem.link}>
           <a
             href={linkItem.url}
-            className="text-2xl text-secondary hover:font-bold outline-none"
+            className="text-2xl text-white hover:font-bold outline-none"
           >
             {linkItem.link}
           </a>

@@ -9,7 +9,7 @@ export const Header = ({ style }) => {
   };
   return (
     <>
-      <header className="relative pb-40" style={style}>
+      <header className="relative pb-40 md:pb-72" style={style}>
         <nav className="fixed w-full top-0 px-5 md:px-20 mt-10 z-50 flex items-center justify-between">
           <a href="./index.html">
             <img
@@ -31,7 +31,7 @@ export const Header = ({ style }) => {
 
       <div
         className={`fixed bg-primary ${
-          menu ? "w-full md:w-[600px] opacity-100" : "w-[0px] opacity-0 scale-0"
+          menu ? "w-full md:w-[600px] opacity-100" : "w-[0px] opacity-0"
         } h-screen right-0 top-0 z-40 transition-all duration-1000 ease-in-out`}
       >
         <Menu />
