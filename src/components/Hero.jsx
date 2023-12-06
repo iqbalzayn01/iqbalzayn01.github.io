@@ -2,14 +2,14 @@ import PropTypes from "prop-types";
 
 export const Hero = ({ style }) => {
   return (
-    <section className="h-screen mt-80" style={style}>
+    <section className="py-20 md:py-40" style={style}>
       <div className="relative mx-auto px-5 md:px-20">
         <div className="text-white">
           <div className="flex flex-col">
-            <span className="text-7xl md:text-9xl font-black uppercase tracking-widest mb-5">
+            <span className="text-[200px] leading-normal font-black uppercase tracking-widest">
               Iqbal
             </span>
-            <span className="text-7xl md:text-9xl font-black uppercase tracking-widest mb-5">
+            <span className="text-[200px] leading-normal font-black uppercase tracking-widest">
               Zayyan.
             </span>
           </div>

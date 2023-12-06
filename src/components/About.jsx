@@ -2,8 +2,8 @@ import PropTypes from "prop-types";
 
 export const About = ({ style }) => {
   return (
-    <section className="mb-20 lg:mb-48" style={style}>
-      <div className="2xl:container mx-auto px-5 md:px-20">
+    <section className="py-20 md:py-40" style={style}>
+      <div className="mx-auto px-5 md:px-20">
         <div className="flex flex-col-reverse md:flex-row items-start justify-between gap-10">
           <div className="w-full md:w-1/2">
             <h2 className=" text-4xl text-white font-medium mb-10">Hello</h2>

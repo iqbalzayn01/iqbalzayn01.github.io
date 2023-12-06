@@ -9,14 +9,22 @@ export const Header = ({ style }) => {
   };
   return (
     <>
-      <header className="relative" style={style}>
+      <header className="relative pb-40" style={style}>
         <nav className="fixed w-full top-0 px-5 md:px-20 mt-10 z-50 flex items-center justify-between">
           <a href="./index.html">
-            <img src="./design/logo.svg" alt="" width={80} />
+            <img
+              src="./design/logo.svg"
+              alt=""
+              className="w-full md:w-[80px] h-auto"
+            />
           </a>
 
           <button type="button" onClick={toggleMenu} className="outline-none">
-            <img src="./design/menu.svg" alt="" />
+            <img
+              src="./design/menu.svg"
+              alt=""
+              className="w-[90px] md:w-[50px] h-auto"
+            />
           </button>
         </nav>
       </header>
