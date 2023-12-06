@@ -1,8 +1,12 @@
+import PropTypes from "prop-types";
 import { ConnectLinks } from "./Links";
 
-export const Footer = () => {
+export const Footer = ({ style }) => {
   return (
-    <footer className="px-5 md:px-20 mt-10 mb-20 lg:mt-20 lg:mb-40">
+    <footer
+      className="px-5 md:px-20 mt-10 mb-20 lg:mt-20 lg:mb-40"
+      style={style}
+    >
       <div className="2xl:container bg-white mx-auto p-5 rounded-md">
         <div className="mb-10">
           <h2 className="text-2xl text-secondary font-medium mb-5">
@@ -20,4 +24,8 @@ export const Footer = () => {
       </div>
     </footer>
   );
+};
+
+Footer.propTypes = {
+  style: PropTypes.object.isRequired,
 };

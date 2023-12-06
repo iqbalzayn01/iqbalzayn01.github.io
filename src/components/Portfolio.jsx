@@ -1,10 +1,15 @@
+import PropTypes from "prop-types";
 import { CardItem } from "./CardItem";
 import portfolioData from "../data/portfolioData.json";
 
-export const Portfolio = () => {
+export const Portfolio = ({ style }) => {
   return (
-    <section id="portfolio" className="mt-10 mb-20 lg:mt-20 lg:mb-40">
-      <div className="2xl:container mx-auto px-5 md:px-20">
+    <section
+      id="portfolio"
+      className="mt-10 mb-20 lg:mt-20 lg:mb-40"
+      style={style}
+    >
+      <div className="mx-auto px-5 md:px-20">
         <div className="flex flex-col gap-5">
           <h2 className="text-2xl md:text-3xl text-white font-medium tracking-wider">
             Portfolio
@@ -21,4 +26,8 @@ export const Portfolio = () => {
       </div>
     </section>
   );
+};
+
+Portfolio.propTypes = {
+  style: PropTypes.object.isRequired,
 };

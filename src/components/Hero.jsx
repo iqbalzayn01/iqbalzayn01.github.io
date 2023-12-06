@@ -1,21 +1,32 @@
-export const Hero = () => {
+import PropTypes from "prop-types";
+
+export const Hero = ({ style }) => {
   return (
-    <section className="mt-10 mb-20 lg:mt-20 lg:mb-40">
-      <div className="2xl:container mx-auto px-5 md:px-20">
-        <hgroup className="mb-10 text-white">
-          <h3 className="text-xl font-medium tracking-wider mb-5">
-            Hello! I’m Iqbal.
-          </h3>
-          <h1 className="text-4xl md:text-5xl lg:text-7xl font-black tracking-widest">
-            I’m a freelancer in Frontend Development and Web Design.
+    <section className="h-screen mt-80" style={style}>
+      <div className="relative mx-auto px-5 md:px-20">
+        <div className="text-white">
+          <div className="flex flex-col">
+            <span className="text-7xl md:text-9xl font-black uppercase tracking-widest mb-5">
+              Iqbal
+            </span>
+            <span className="text-7xl md:text-9xl font-black uppercase tracking-widest mb-5">
+              Zayyan.
+            </span>
+          </div>
+          <h1 className="text-xl uppercase tracking-widest">
+            Freelance Creative Frontend Developer.
           </h1>
-        </hgroup>
-        <a href="#contacts">
-          <button className="text-white hover:text-secondary font-semibold px-6 py-4 hover:bg-white border-2 border-white rounded-full tracking-wider">
-            Let’s Connect!
-          </button>
-        </a>
+        </div>
+        <img
+          src="./design/explore.svg"
+          alt=""
+          className="fixed w-[450px] object-cover -right-20 -bottom-32 -z-50 animate-spin-slow"
+        />
       </div>
     </section>
   );
+};
+
+Hero.propTypes = {
+  style: PropTypes.object.isRequired,
 };

@@ -5,10 +5,13 @@ export const Links = () => {
     { link: "Contact", url: "#contact" },
   ];
   return (
-    <ul className="hidden md:flex items-center justify-end gap-5 xl:gap-20">
+    <ul className="flex flex-col items-start gap-10 xl:gap-20">
       {dataLinks.map((linkItem) => (
         <li key={linkItem.link}>
-          <a href={linkItem.url} className="text-white">
+          <a
+            href={linkItem.url}
+            className="text-2xl text-secondary hover:font-bold outline-none"
+          >
             {linkItem.link}
           </a>
         </li>
