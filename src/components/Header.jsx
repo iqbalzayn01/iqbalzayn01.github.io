@@ -15,16 +15,12 @@ export const Header = ({ style }) => {
             <img
               src="./design/logo.svg"
               alt=""
-              className="w-[50px] md:w-[80px] h-auto"
+              className="w-[75px] md:w-[80px] h-auto"
             />
           </a>
 
           <button type="button" onClick={toggleMenu} className="outline-none">
-            <img
-              src="./design/menu.svg"
-              alt=""
-              className="w-[30px] md:w-[50px] h-auto"
-            />
+            <img src="./design/menu.svg" alt="" className="w-[60px] h-auto" />
           </button>
         </nav>
       </header>
