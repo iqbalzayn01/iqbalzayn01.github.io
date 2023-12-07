@@ -28,6 +28,7 @@ export default function App() {
   const zoomStyle = {
     zoom: `${zoomLevel}%`,
   };
+
   return (
     <>
       <Header style={zoomStyle} />

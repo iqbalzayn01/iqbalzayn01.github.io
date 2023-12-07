@@ -14,7 +14,7 @@ export const Hero = ({ style }) => {
             </span>
           </div>
           <h1 className="text-xl uppercase tracking-widest">
-            Freelance Creative Frontend Developer.
+            Frontend Developer and Web Designer
           </h1>
         </div>
         <img
