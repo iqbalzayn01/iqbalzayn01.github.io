@@ -4,7 +4,7 @@ import { Form } from "./Form";
 
 export const Footer = ({ style }) => {
   return (
-    <footer className="bg-white mx-5 md:mx-20 mb-20 rounded-lg" style={style}>
+    <footer className="bg-white mx-5 md:mx-28 mb-20 rounded-lg" style={style}>
       <div className="mx-auto px-5 py-5 md:px-20 md:py-20">
         <div className="mb-10">
           <h2 className="text-5xl text-secondary font-medium mb-5">

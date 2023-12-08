@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 export const Hero = ({ style }) => {
   return (
-    <section className="mx-auto px-5 py-5 md:px-20" style={style}>
+    <section className="mx-auto px-5 py-24 md:px-32" style={style}>
       <div className="w-full flex flex-col-reverse md:flex-row items-center justify-between">
         {/* Caption */}
         <div className="w-full md:w-1/2 flex flex-col items-start gap-10">
@@ -42,7 +42,7 @@ export const Hero = ({ style }) => {
                 goals. I’m enthusiastic about staying informed on the latest
                 trends and eagerly embracing new technologies and frameworks.
               </p>
-              <button type="button" className="btn-cta">
+              <button type="button" className="btn-cta font-semibold">
                 Let’s Connect
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

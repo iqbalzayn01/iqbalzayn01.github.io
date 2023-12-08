@@ -12,7 +12,7 @@ export const Header = ({ style }) => {
 
   return (
     <>
-      <header className="px-5 py-10 md:px-20" style={style}>
+      <header className="px-5 py-10 md:px-32" style={style}>
         <nav className="flex items-center justify-between">
           <a href="./index.html">
             <img

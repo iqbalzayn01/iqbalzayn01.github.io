@@ -28,7 +28,7 @@ export const Skills = ({ style }) => {
     },
   ];
   return (
-    <section className="mx-auto px-5 py-5 md:px-20" style={style}>
+    <section className="mx-auto px-5 py-24 md:px-32" style={style}>
       <div className="w-full flex flex-col text-white">
         <div className="border-white border-b-[0.4px] py-12">
           <h2 className="text-5xl font-extrabold mb-2">Skills</h2>
@@ -39,11 +39,13 @@ export const Skills = ({ style }) => {
             key={skillGroup.name}
             className="flex items-start justify-between hover:bg-third border-white border-b-[0.4px] py-12"
           >
-            <h2 className="text-3xl mb-2">{skillGroup.name}</h2>
+            <h2 className="text-4xl mb-2">{skillGroup.name}</h2>
             <div className="w-[30%] flex flex-wrap gap-5">
               {skillGroup.skillList.map((skillItem) => (
                 <ul key={skillItem}>
-                  <li className="btn-cta">{skillItem}</li>
+                  <li className="btn-cta text-secondary font-semibold">
+                    {skillItem}
+                  </li>
                 </ul>
               ))}
             </div>
