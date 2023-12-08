@@ -18,10 +18,18 @@
     .connect-item {
         @apply hover:bg-secondary text-secondary hover:text-white border-2 border-secondary rounded-full px-6 py-4
     }
+
+    .btn-cta {
+        @apply bg-white hover:bg-primary hover:text-white flex gap-5 transition-basic px-6 py-3 rounded-lg
+    }
 }
 
 @layer utilities {
-    .hover-effect {
+    .transition-zoom {
         @apply transform transition-all duration-500 ease-in-out hover:scale-125
+    }
+
+    .transition-basic {
+        @apply transition-all duration-300 ease-in-out
     }
 }

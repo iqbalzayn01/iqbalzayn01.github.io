@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { ConnectLinks } from "./Links";
+import { Form } from "./Form";
 
 export const Footer = ({ style }) => {
   return (
@@ -18,6 +19,8 @@ export const Footer = ({ style }) => {
           </p>
         </div>
         <ConnectLinks />
+        <h3 className="text-3xl font-medium mb-5">Message</h3>
+        <Form />
       </div>
     </footer>
   );

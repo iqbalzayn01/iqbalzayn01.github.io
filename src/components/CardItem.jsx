@@ -13,7 +13,7 @@ export const CardItem = ({ id, name, imageName, url }) => {
         <img
           src={`./content/portfolio/${imageName}`}
           alt={name}
-          className="object-cover w-full h-full hover-effect"
+          className="object-cover w-full h-full transition-zoom"
         />
       </figure>
     </a>

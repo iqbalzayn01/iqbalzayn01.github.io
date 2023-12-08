@@ -1,16 +1,16 @@
 export const Links = () => {
   const dataLinks = [
-    { link: "About Me", url: "#about" },
     { link: "Portfolio", url: "#portfolio" },
+    { link: "Blog", url: "#blog" },
     { link: "Contact", url: "#contact" },
   ];
   return (
-    <ul className="flex flex-col items-start gap-10 xl:gap-20">
+    <ul className="flex items-center gap-16">
       {dataLinks.map((linkItem) => (
         <li key={linkItem.link}>
           <a
             href={linkItem.url}
-            className="text-2xl text-white hover:font-bold outline-none"
+            className="text-xl text-white hover:font-extrabold transition-basic outline-none"
           >
             {linkItem.link}
           </a>

@@ -13,6 +13,7 @@ export default {
       colors: {
         primary: "#0AB88A",
         secondary: "#2C3333",
+        third: "#323939",
       },
       animation: {
         "spin-slow": "spin 14s linear infinite",
