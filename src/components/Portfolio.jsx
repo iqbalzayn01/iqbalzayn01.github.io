@@ -3,6 +3,13 @@ import PropTypes from "prop-types";
 export const Portfolio = ({ style }) => {
   const dataPortfolio = [
     {
+      name: "GreatestBeam",
+      imageName: "portfo4.png",
+      type: "Design & Development",
+      url: "https://www.figma.com/file/rTALiBTxsljPNJ0DZkhyYC/(Preview)Greatest-Beam-Fashion---Landing-Page?type=design&node-id=38%3A124&mode=design&t=zxJ7pyY1s374dCEq-1",
+      year: 2023,
+    },
+    {
       name: "LuxRestaurant",
       imageName: "portfo1.png",
       type: "Design & Development",
@@ -17,23 +24,20 @@ export const Portfolio = ({ style }) => {
       year: 2023,
     },
     {
-      name: "Portfolio",
+      name: "Alena Web Portfolio",
       imageName: "portfo3.png",
-      type: "Design & Development",
+      type: "Web Design",
       url: "https://www.figma.com/file/KDT7cuZ8uHW0vUIi99Ci2w/(Preview)Alena-Culhane---Website-Portfolio?type=design&node-id=13%3A2&mode=design&t=0fbYfmhWDtBVbujV-1",
-      year: 2023,
-    },
-    {
-      name: "GreatestBeam",
-      imageName: "portfo4.png",
-      type: "Design & Development",
-      url: "https://www.figma.com/file/rTALiBTxsljPNJ0DZkhyYC/(Preview)Greatest-Beam-Fashion---Landing-Page?type=design&node-id=38%3A124&mode=design&t=zxJ7pyY1s374dCEq-1",
       year: 2023,
     },
   ];
 
   return (
-    <section className="mx-auto px-5 py-24 md:px-32" style={style}>
+    <section
+      id="portfolio"
+      className="mx-auto px-5 py-24 md:px-32"
+      style={style}
+    >
       <div className="w-full flex flex-col text-white">
         <div className="border-white border-b-[0.4px] py-12">
           <h2 className="text-5xl font-extrabold mb-2">Portfolio</h2>

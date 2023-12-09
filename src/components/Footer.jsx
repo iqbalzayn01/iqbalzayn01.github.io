@@ -1,16 +1,16 @@
 import PropTypes from "prop-types";
-import { ConnectLinks } from "./Links";
-import { Form } from "./Form";
+import { ConnectLinks } from "./functions/Links";
+import { Form } from "./functions/Form";
 
 export const Footer = ({ style }) => {
   return (
-    <footer className="bg-white mx-5 md:mx-28 mb-20 rounded-lg" style={style}>
-      <div className="mx-auto px-5 py-5 md:px-20 md:py-20">
+    <footer id="contact" className="mx-auto px-5 py-24 md:px-32" style={style}>
+      <div className="bg-white p-10 rounded-lg">
         <div className="mb-10">
           <h2 className="text-5xl text-secondary font-medium mb-5">
-            Let’s connect!
+            Let’s <span className="text-primary">Connect!</span>
           </h2>
-          <p className="text-secondary">
+          <p className="text-secondary text-xl">
             I’m excited to collaborate and bring your ideas to life. Whether you
             have a project in mind or just want to say hello, I’d love to hear
             from you. Your message is a step towards creating something amazing!

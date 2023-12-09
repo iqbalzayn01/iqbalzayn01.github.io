@@ -1,16 +1,25 @@
-export const Links = () => {
+import PropTypes from "prop-types";
+
+export const Links = ({ className, setMenu }) => {
   const dataLinks = [
     { link: "Portfolio", url: "#portfolio" },
     { link: "Blog", url: "#blog" },
     { link: "Contact", url: "#contact" },
   ];
+
+  const handleLinkClick = () => {
+    setMenu(false);
+  };
   return (
-    <ul className="flex items-center gap-16">
+    <ul
+      className={`flex flex-col md:flex-row md:items-center gap-16 ${className}`}
+    >
       {dataLinks.map((linkItem) => (
         <li key={linkItem.link}>
           <a
             href={linkItem.url}
-            className="text-xl text-white hover:font-extrabold transition-basic outline-none"
+            className="text-4xl md:text-xl text-white hover:font-extrabold transition-basic outline-none"
+            onClick={handleLinkClick}
           >
             {linkItem.link}
           </a>
@@ -18,6 +27,11 @@ export const Links = () => {
       ))}
     </ul>
   );
+};
+
+Links.propTypes = {
+  className: PropTypes.string,
+  setMenu: PropTypes.func,
 };
 
 export const ConnectLinks = () => {
@@ -40,7 +54,7 @@ export const ConnectLinks = () => {
             href={connectItem.url}
             target="_blank"
             rel="noreferrer"
-            className="font-semibold"
+            className="text-xl font-semibold"
           >
             {connectItem.link}
           </a>

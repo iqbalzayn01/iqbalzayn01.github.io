@@ -43,7 +43,7 @@ export const Skills = ({ style }) => {
             <div className="w-[30%] flex flex-wrap gap-5">
               {skillGroup.skillList.map((skillItem) => (
                 <ul key={skillItem}>
-                  <li className="btn-cta text-secondary font-semibold">
+                  <li className="btn-cta text-secondary text-xl font-semibold">
                     {skillItem}
                   </li>
                 </ul>

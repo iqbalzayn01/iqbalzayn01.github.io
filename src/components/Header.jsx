@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
-import { Menu } from "./Menu";
-import { Links } from "./Links";
+import { Menu } from "./functions/Menu";
+import { Links } from "./functions/Links";
 
 export const Header = ({ style }) => {
   const [menu, setMenu] = useState(false);
@@ -14,7 +14,7 @@ export const Header = ({ style }) => {
     <>
       <header className="px-5 py-10 md:px-32" style={style}>
         <nav className="flex items-center justify-between">
-          <a href="./index.html">
+          <a href="./index.html" className="z-50">
             <img
               src="./design/logo.svg"
               alt=""
@@ -22,13 +22,13 @@ export const Header = ({ style }) => {
             />
           </a>
 
-          <Links />
+          <Links className="hidden md:block" />
 
           {/* Mobile */}
           <button
             type="button"
             onClick={toggleMenu}
-            className="block md:hidden outline-none"
+            className="block md:hidden outline-none z-50"
           >
             <svg
               viewBox="0 0 30 30"
@@ -60,7 +60,7 @@ export const Header = ({ style }) => {
           menu ? "w-full md:w-[600px] opacity-100" : "w-[0px] opacity-0"
         } h-screen right-0 top-0 z-40 transition-all duration-1000 ease-in-out`}
       >
-        <Menu />
+        <Menu setMenu={setMenu} />
       </div>
     </>
   );
