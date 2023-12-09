@@ -22,7 +22,7 @@ export const Header = ({ style }) => {
             />
           </a>
 
-          <Links className="hidden md:block" />
+          <Links className="hidden md:flex" />
 
           {/* Mobile */}
           <button
