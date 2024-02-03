@@ -5,8 +5,8 @@ export const Portfolio = ({ style }) => {
     {
       name: "GreatestBeam",
       imageName: "portfo4.png",
-      type: "Design & Development",
-      url: "https://www.figma.com/file/rTALiBTxsljPNJ0DZkhyYC/(Preview)Greatest-Beam-Fashion---Landing-Page?type=design&node-id=38%3A124&mode=design&t=zxJ7pyY1s374dCEq-1",
+      type: "Web Design",
+      url: "https://www.figma.com/file/rTALiBTxsljPNJ0DZkhyYC/(Preview)Greatest-Beam-Fashion---Landing-Page?type=design&node-id=22%3A90&mode=design&t=rPjsJeWEBwHOVZJG-1",
       year: 2023,
     },
     {
@@ -24,11 +24,11 @@ export const Portfolio = ({ style }) => {
       year: 2023,
     },
     {
-      name: "Alena Web Portfolio",
+      name: "InsightGathers",
       imageName: "portfo3.png",
       type: "Web Design",
-      url: "https://www.figma.com/file/KDT7cuZ8uHW0vUIi99Ci2w/(Preview)Alena-Culhane---Website-Portfolio?type=design&node-id=13%3A2&mode=design&t=0fbYfmhWDtBVbujV-1",
-      year: 2023,
+      url: "https://www.figma.com/file/5Oma9E8Zk1IkkKRbv19sOo/(Preview)-InsightGathers?type=design&node-id=58%3A15&mode=design&t=2RRH7yljb8UMvkU2-1",
+      year: 2024,
     },
   ];
 
@@ -42,34 +42,36 @@ export const Portfolio = ({ style }) => {
         <div className="border-white border-b-[0.4px] py-12">
           <h2 className="text-5xl font-extrabold mb-2">Portfolio</h2>
         </div>
-        {dataPortfolio.map((portfo) => (
-          <div
-            key={portfo.name}
-            className="flex items-start justify-between hover:bg-third border-white border-b-[0.4px] py-12"
-          >
-            <div className="flex flex-col gap-2">
-              <p className="text-lg">{portfo.type}</p>
-              <h2 className="text-4xl font-medium">{portfo.name}</h2>
-              <p className="text-lg">{portfo.year}</p>
+        {dataPortfolio
+          .sort((a, b) => b.year - a.year)
+          .map((portfo) => (
+            <div
+              key={portfo.name}
+              className="flex flex-wrap items-start justify-between gap-5 hover:bg-third border-white border-b-[0.4px] py-12"
+            >
+              <div className="flex flex-col gap-2">
+                <p className="text-lg">{portfo.type}</p>
+                <h2 className="text-4xl font-medium">{portfo.name}</h2>
+                <p className="text-lg">{portfo.year}</p>
+              </div>
+              <div className="w-full md:w-1/2">
+                <a
+                  href={portfo.url}
+                  target="_blank"
+                  className="card-item"
+                  rel="noreferrer"
+                >
+                  <figure className="relative h-full overflow-hidden transition-all duration-500 ease-in-out rounded-lg">
+                    <img
+                      src={`./content/portfolio/${portfo.imageName}`}
+                      alt={portfo.name}
+                      className="object-cover w-full h-full transition-zoom"
+                    />
+                  </figure>
+                </a>
+              </div>
             </div>
-            <div className="w-[30%] flex flex-wrap gap-5">
-              <a
-                href={portfo.url}
-                target="_blank"
-                className="card-item"
-                rel="noreferrer"
-              >
-                <figure className="relative h-full overflow-hidden transition-all duration-500 ease-in-out rounded-lg">
-                  <img
-                    src={`./content/portfolio/${portfo.imageName}`}
-                    alt={portfo.name}
-                    className="object-cover w-full h-full transition-zoom"
-                  />
-                </figure>
-              </a>
-            </div>
-          </div>
-        ))}
+          ))}
       </div>
     </section>
   );

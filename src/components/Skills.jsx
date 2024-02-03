@@ -37,10 +37,10 @@ export const Skills = ({ style }) => {
         {dataSkills.map((skillGroup) => (
           <div
             key={skillGroup.name}
-            className="flex items-start justify-between hover:bg-third border-white border-b-[0.4px] py-12"
+            className="flex flex-col md:flex-row items-start md:justify-between gap-10 hover:bg-third border-white border-b-[0.4px] py-12"
           >
             <h2 className="text-4xl mb-2">{skillGroup.name}</h2>
-            <div className="w-[30%] flex flex-wrap gap-5">
+            <div className="flex flex-wrap justify-start md:justify-end gap-5">
               {skillGroup.skillList.map((skillItem) => (
                 <ul key={skillItem}>
                   <li className="btn-cta text-secondary text-xl font-semibold">

@@ -56,7 +56,7 @@ export const Header = ({ style }) => {
       </header>
 
       <div
-        className={`fixed bg-primary ${
+        className={`fixed bg-black ${
           menu ? "w-full md:w-[600px] opacity-100" : "w-[0px] opacity-0"
         } h-screen right-0 top-0 z-40 transition-all duration-1000 ease-in-out`}
       >
