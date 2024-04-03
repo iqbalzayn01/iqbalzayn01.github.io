@@ -25,7 +25,7 @@ export default function Portfolio() {
     },
     {
       name: "InsightGathers",
-      imageName: "portfo3.png",
+      imageName: "portfo3-new.png",
       type: "Design & Development",
       url: "https://www.figma.com/file/5Oma9E8Zk1IkkKRbv19sOo/(Preview)-InsightGathers?type=design&node-id=58%3A15&mode=design&t=2RRH7yljb8UMvkU2-1",
       year: 2024,
