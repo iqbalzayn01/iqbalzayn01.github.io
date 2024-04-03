@@ -36,7 +36,6 @@ Links.propTypes = {
 
 export const ConnectLinks = () => {
   const dataConnectLinks = [
-    // { link: "Email", url: "#email" },
     {
       link: "Linkedin",
       url: "https://www.linkedin.com/in/muhammad-iqbal-zayyan-abiyyu-285b3821a/",
@@ -44,7 +43,6 @@ export const ConnectLinks = () => {
     { link: "Instagram", url: "https://www.instagram.com/iqbalzayn01/" },
     { link: "Github", url: "https://github.com/iqbalzayn01" },
     { link: "Dribbble", url: "https://dribbble.com/iqbalzayn01" },
-    { link: "Uplabs", url: "https://www.uplabs.com/iqbalzayn01" },
   ];
   return (
     <ul className="flex flex-wrap items-center gap-5 mb-12">
@@ -54,7 +52,7 @@ export const ConnectLinks = () => {
             href={connectItem.url}
             target="_blank"
             rel="noreferrer"
-            className="text-xl font-semibold"
+            className="text-lg font-medium"
           >
             {connectItem.link}
           </a>

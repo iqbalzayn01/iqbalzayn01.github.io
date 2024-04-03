@@ -1,6 +1,4 @@
-import PropTypes from "prop-types";
-
-export const Skills = ({ style }) => {
+export default function Skills() {
   const dataSkills = [
     {
       name: "Core",
@@ -28,7 +26,7 @@ export const Skills = ({ style }) => {
     },
   ];
   return (
-    <section className="mx-auto px-5 py-24 md:px-32" style={style}>
+    <section className="mx-auto px-5 py-24 md:px-32">
       <div className="w-full flex flex-col text-white">
         <div className="border-white border-b-[0.4px] py-12">
           <h2 className="text-5xl font-extrabold mb-2">Skills</h2>
@@ -43,7 +41,7 @@ export const Skills = ({ style }) => {
             <div className="flex flex-wrap justify-start md:justify-end gap-5">
               {skillGroup.skillList.map((skillItem) => (
                 <ul key={skillItem}>
-                  <li className="btn-cta text-secondary text-xl font-semibold">
+                  <li className="btn-cta text-secondary text-lg font-medium">
                     {skillItem}
                   </li>
                 </ul>
@@ -54,8 +52,4 @@ export const Skills = ({ style }) => {
       </div>
     </section>
   );
-};
-
-Skills.propTypes = {
-  style: PropTypes.object.isRequired,
-};
+}

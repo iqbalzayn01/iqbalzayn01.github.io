@@ -1,10 +1,8 @@
-import PropTypes from "prop-types";
-import { ConnectLinks } from "./functions/Links";
-import { Form } from "./functions/Form";
+import { ConnectLinks } from "../Links";
 
-export const Footer = ({ style }) => {
+export default function Footer() {
   return (
-    <footer id="contact" className="mx-auto px-5 py-24 md:px-32" style={style}>
+    <footer id="contact" className="mx-auto px-5 py-24 md:px-32">
       <div className="bg-white p-10 rounded-lg">
         <div className="mb-10">
           <h2 className="text-5xl text-secondary font-medium mb-5">
@@ -19,13 +17,7 @@ export const Footer = ({ style }) => {
           </p>
         </div>
         <ConnectLinks />
-        <h3 className="text-3xl font-medium mb-5">Message</h3>
-        <Form />
       </div>
     </footer>
   );
-};
-
-Footer.propTypes = {
-  style: PropTypes.object.isRequired,
-};
+}

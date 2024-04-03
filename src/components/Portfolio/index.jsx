@@ -1,6 +1,6 @@
-import PropTypes from "prop-types";
+import CardItem from "../CardItem";
 
-export const Portfolio = ({ style }) => {
+export default function Portfolio() {
   const dataPortfolio = [
     {
       name: "GreatestBeam",
@@ -26,18 +26,14 @@ export const Portfolio = ({ style }) => {
     {
       name: "InsightGathers",
       imageName: "portfo3.png",
-      type: "Web Design",
+      type: "Design & Development",
       url: "https://www.figma.com/file/5Oma9E8Zk1IkkKRbv19sOo/(Preview)-InsightGathers?type=design&node-id=58%3A15&mode=design&t=2RRH7yljb8UMvkU2-1",
       year: 2024,
     },
   ];
 
   return (
-    <section
-      id="portfolio"
-      className="mx-auto px-5 py-24 md:px-32"
-      style={style}
-    >
+    <section id="portfolio" className="mx-auto px-5 py-24 md:px-32">
       <div className="w-full flex flex-col text-white">
         <div className="border-white border-b-[0.4px] py-12">
           <h2 className="text-5xl font-extrabold mb-2">Portfolio</h2>
@@ -55,28 +51,15 @@ export const Portfolio = ({ style }) => {
                 <p className="text-lg">{portfo.year}</p>
               </div>
               <div className="w-full md:w-1/2">
-                <a
-                  href={portfo.url}
-                  target="_blank"
-                  className="card-item"
-                  rel="noreferrer"
-                >
-                  <figure className="relative h-full overflow-hidden transition-all duration-500 ease-in-out rounded-lg">
-                    <img
-                      src={`./content/portfolio/${portfo.imageName}`}
-                      alt={portfo.name}
-                      className="object-cover w-full h-full transition-zoom"
-                    />
-                  </figure>
-                </a>
+                <CardItem
+                  name={portfo.name}
+                  imageName={portfo.imageName}
+                  url={portfo.url}
+                />
               </div>
             </div>
           ))}
       </div>
     </section>
   );
-};
-
-Portfolio.propTypes = {
-  style: PropTypes.object.isRequired,
-};
+}

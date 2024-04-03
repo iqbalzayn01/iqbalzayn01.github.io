@@ -1,9 +1,10 @@
-import PropTypes from "prop-types";
 import { useState } from "react";
-import { Menu } from "./functions/Menu";
-import { Links } from "./functions/Links";
+import { Link } from "react-router-dom";
 
-export const Header = ({ style }) => {
+import { Links } from "../Links";
+import Menu from "../Menu";
+
+export default function Header() {
   const [menu, setMenu] = useState(false);
 
   const toggleMenu = () => {
@@ -12,15 +13,15 @@ export const Header = ({ style }) => {
 
   return (
     <>
-      <header className="px-5 py-10 md:px-32" style={style}>
+      <header className="mx-auto px-5 py-10 md:px-32">
         <nav className="flex items-center justify-between">
-          <a href="./index.html" className="z-50">
+          <Link to="/" className="z-50">
             <img
               src="./design/logo.svg"
               alt=""
               className="w-[75px] md:w-[80px] h-auto"
             />
-          </a>
+          </Link>
 
           <Links className="hidden md:flex" />
 
@@ -56,7 +57,7 @@ export const Header = ({ style }) => {
       </header>
 
       <div
-        className={`fixed bg-black ${
+        className={`fixed bg-secondary ${
           menu ? "w-full md:w-[600px] opacity-100" : "w-[0px] opacity-0"
         } h-screen right-0 top-0 z-40 transition-all duration-1000 ease-in-out`}
       >
@@ -64,8 +65,4 @@ export const Header = ({ style }) => {
       </div>
     </>
   );
-};
-
-Header.propTypes = {
-  style: PropTypes.object.isRequired,
-};
+}

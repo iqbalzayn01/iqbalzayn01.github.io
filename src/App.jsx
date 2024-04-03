@@ -1,45 +1,6 @@
-import { useState, useEffect } from "react";
-import { Header } from "./components/Header";
-import { Hero } from "./components/Hero";
-import { Skills } from "./components/Skills";
-import { Portfolio } from "./components/Portfolio";
-import { Certificates } from "./components/Certificates";
-import { Experiences } from "./components/Experiences";
-import { Footer } from "./components/Footer";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./routes";
 
 export default function App() {
-  const [zoomLevel, setZoomLevel] = useState(1);
-
-  useEffect(() => {
-    const handleResize = () => {
-      const scaleFactor = 1 / (window.devicePixelRatio || 1);
-      const newZoomLevel = 100 * scaleFactor;
-      const minZoom = 25;
-      const maxZoom = 500;
-      setZoomLevel(Math.min(Math.max(newZoomLevel, minZoom), maxZoom));
-    };
-
-    window.addEventListener("resize", handleResize);
-    handleResize();
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
-  const zoomStyle = {
-    zoom: `${zoomLevel}%`,
-  };
-
-  return (
-    <>
-      <Header style={zoomStyle} />
-      <Hero style={zoomStyle} />
-      <Skills style={zoomStyle} />
-      <Portfolio style={zoomStyle} />
-      <Certificates style={zoomStyle} />
-      <Experiences style={zoomStyle} />
-      <Footer style={zoomStyle} />
-    </>
-  );
+  return <RouterProvider router={router} />;
 }

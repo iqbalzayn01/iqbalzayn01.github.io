@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-export const CardItem = ({ id, name, imageName, url }) => {
+export default function CardItem({ id, name, imageName, url }) {
   return (
     <a
       key={id}
@@ -18,11 +18,11 @@ export const CardItem = ({ id, name, imageName, url }) => {
       </figure>
     </a>
   );
-};
+}
 
 CardItem.propTypes = {
-  id: PropTypes.number.isRequired,
-  name: PropTypes.string.isRequired,
-  imageName: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired,
+  id: PropTypes.number,
+  name: PropTypes.string,
+  imageName: PropTypes.string,
+  url: PropTypes.string,
 };

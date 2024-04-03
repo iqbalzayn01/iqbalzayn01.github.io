@@ -5,8 +5,11 @@
 
 @layer base {
     body {
-        @apply bg-black font-poppins;
+        @apply bg-secondary font-poppins;
+    }
 
+    .container-base {
+        @apply container mx-auto
     }
 }
 

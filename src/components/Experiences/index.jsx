@@ -1,6 +1,4 @@
-import PropTypes from "prop-types";
-
-export const Experiences = ({ style }) => {
+export default function Experiences() {
   const dataExperiences = [
     {
       name: "PT. Telekomunikasi Indonesia, Tbk",
@@ -19,7 +17,7 @@ export const Experiences = ({ style }) => {
     },
   ];
   return (
-    <section className="mx-auto px-5 py-24 md:px-32" style={style}>
+    <section className="mx-auto px-5 py-24 md:px-32">
       <div className="w-full flex flex-col text-white">
         <div className="border-white border-b-[0.4px] py-12">
           <h2 className="text-5xl font-extrabold mb-2">Experiences</h2>
@@ -39,8 +37,4 @@ export const Experiences = ({ style }) => {
       </div>
     </section>
   );
-};
-
-Experiences.propTypes = {
-  style: PropTypes.object.isRequired,
-};
+}

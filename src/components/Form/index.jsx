@@ -1,4 +1,4 @@
-export const Form = () => {
+export default function Form() {
   return (
     <iframe
       title="Tally Embed"
@@ -6,4 +6,4 @@ export const Form = () => {
       className="w-full h-96"
     ></iframe>
   );
-};
+}
