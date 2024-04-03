@@ -6,6 +6,7 @@ export default function Skills() {
         "HTML",
         "CSS",
         "Javascript",
+        "UI/UX Design",
         "Web Design",
         "Responsive Design",
       ],
