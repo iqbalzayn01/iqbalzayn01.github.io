@@ -16,6 +16,9 @@ export default function Footer() {
             extraordinary.
           </p>
         </div>
+        <button type="button" className="connect-item mb-5">
+          Email: miqzayudevstudio@gmail.com
+        </button>
         <ConnectLinks />
       </div>
     </footer>
